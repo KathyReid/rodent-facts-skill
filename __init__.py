@@ -1,4 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
+import random
 
 data = [
   'Rats are omnivores with their primary diet consisting of seeds, fruit, grains, nuts, flowers, insects and such.',
@@ -19,7 +20,7 @@ class RodentFacts(MycroftSkill):
 
     @intent_file_handler('facts.rodent.intent')
     def handle_facts_rodent(self, message):
-        self.speak_dialog('facts.rodent', data={'fact': data[0]})
+        self.speak_dialog('facts.rodent', data={'fact': random.choice(data)})
 
 
 def create_skill():
