@@ -1,0 +1,5 @@
+{
+    "expected_dialog": "facts.rodent",
+    "intent_type": "facts.rodent.intent",
+    "utterance": "give me a rodent fact"
+}
